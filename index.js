@@ -38,6 +38,7 @@ const axios = require('axios') ;
       await new Promise(resolve => setTimeout(() => resolve(), 60000));
     } catch(error) {
       console.error('Erro encontrado... Tentando novamente em 1 minuto', error.response.statusText);
+      await new Promise(resolve => setTimeout(() => resolve(), 60000));
     }
   }
 })();
