@@ -1,0 +1,23 @@
+{
+  "name": "real-time-election",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fco3lho/real-time-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fco3lho/real-time-data/issues"
+  },
+  "homepage": "https://github.com/fco3lho/real-time-data#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
