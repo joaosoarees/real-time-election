@@ -30,7 +30,6 @@ const axios = require('axios') ;
 
       const options = {
         hour: 'numeric', minute: 'numeric', second: 'numeric',
-        timeZoneName: 'short'
       };
 
       console.log(`Resultado atualizado: ${new Intl.DateTimeFormat('pt-BR', options).format(Date.now())}`);
@@ -38,8 +37,7 @@ const axios = require('axios') ;
 
       await new Promise(resolve => setTimeout(() => resolve(), 60000));
     } catch(error) {
-      console.error(error);
-      i = false;
+      console.error('Erro encontrado... Tentando novamente em 1 minuto', error.response.statusText);
     }
   }
 })();
